@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Confirmed | YTH Movie Booking</title>
+
+    <link rel="stylesheet" href="assets/css/comfarmation.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+   <nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="YTH Movie Booking">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="movie.html">Movies</a>
+        <a href="showtimes.html">Showtimes</a>
+        <a href="seats.html">Seats</a>
+        <a href="chekout.html">CheckOut</a>
+        <a href="confarmation.html">Comfarmation</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+
+</nav>
+
+    <!-- Success Header -->
+    <header class="page-header">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h1>Booking <span>Confirmed!</span></h1>
+
+        <p>
+            Your movie ticket has been booked successfully.
+            Enjoy your movie experience with YTH Movie Booking.
+        </p>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section">
+
+            <div class="confirmation-wrapper">
+
+                <!-- Ticket Card -->
+                <div class="ticket-card">
+
+                    <div class="ticket-top">
+
+                        <h2>YTH Movie Ticket</h2>
+
+                        <span>BOOKING SUCCESSFUL</span>
+
+                    </div>
+
+
+                    <div class="ticket-content">
+
+                        <!-- Movie Details -->
+                        <div class="movie-details">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4"
+                                alt="RRR Movie Poster">
+
+                            <div>
+
+                                <h3>RRR</h3>
+
+                                <p>
+                                    Action | Drama | Historical
+                                </p>
+
+                                <p>
+                                    Hindi / Telugu
+                                </p>
+
+                                <p>
+                                    Duration: 3h 7m
+                                </p>
+
+                                <p>
+                                    Cinema Experience: 2D
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Booking Details -->
+                        <div class="booking-grid">
+
+                            <div class="booking-item">
+
+                                <label>Booking ID</label>
+
+                                <strong
+                                    id="bookingId"
+                                    class="highlight">
+                                    YTH000000
+                                </strong>
+
+                            </div>
+
+
+                            <div class="booking-item">
+
+                                <label>Booking Date</label>
+
+                                <strong id="bookingDate">
+                                    Today
+                                </strong>
+
+                            </div>
+
+
+                            <div class="booking-item">
+
+                                <label>Theatre</label>
+
+                                <strong>
+                                    PVR Cinemas
+                                </strong>
+
+                            </div>
+
+
+                            <div class="booking-item">
+
+                                <label>Showtime</label>
+
+                                <strong>
+                                    08:30 PM
+                                </strong>
+
+                            </div>
+
+
+                            <div class="booking-item">
+
+                                <label>Selected Seats</label>
+
+                                <strong id="selectedSeats">
+                                    None
+                                </strong>
+
+                            </div>
+
+
+                            <div class="booking-item">
+
+                                <label>Payment Method</label>
+
+                                <strong id="paymentMethod">
+                                    Demo Payment
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Customer Details -->
+                        <div class="customer-section">
+
+                            <h3>Customer Details</h3>
+
+                            <div class="customer-details">
+
+                                <p>
+                                    <strong>Name:</strong>
+                                    <span id="customerName">
+                                        Guest User
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <strong>Email:</strong>
+                                    <span id="customerEmail">
+                                        Not Available
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <strong>Mobile:</strong>
+                                    <span id="customerPhone">
+                                        Not Available
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <strong>Status:</strong>
+                                    <span>
+                                        Confirmed
+                                    </span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Ticket Bottom -->
+                    <div class="ticket-bottom">
+
+                        <p>
+                            Please reach the theatre 15 minutes
+                            before the show starts.
+                        </p>
+
+                        <div class="total-amount">
+
+                            <small>Total Amount</small>
+
+                            <strong id="totalAmount">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="action-buttons">
+
+                    <button
+                        class="btn print-btn"
+                        onclick="window.print()">
+
+                        🖨 Print Ticket
+
+                    </button>
+
+                    <a
+                        href="index.html"
+                        class="btn home-btn">
+
+                        Back to Home →
+
+                    </a>
+
+                </div>
+
+
+                <p class="note">
+                    This is a frontend college practical project.
+                    No real payment or actual ticket booking has been processed.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 <span>YTH Movie Booking</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+<script src="assets/js/comfarmation.js"></script></body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Select Seats | YTH Movie Booking</title>
+
+    <link rel="stylesheet" href="assets/css/seats.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="YTH Movie Booking">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="movie.html">Movies</a>
+        <a href="showtimes.html">Showtimes</a>
+        <a href="seats.html" class="active">Seats</a>
+        <a href="chekout.html" class="active">checkout</a>
+        <a href="confarmation.html" class="active">Comfarmation</a>
+        
+        
+    </div>
+
+    <div class="nav-right">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+</nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+
+        <h1 style="margin-top: 50px;">Select Your <span>Seats</span></h1>
+
+        <p>
+            Choose available seats from the cinema hall
+        </p>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section">
+
+            <!-- Booking Summary -->
+            <div class="booking-summary">
+
+                <h2>RRR</h2>
+
+                <p>
+                    <span>Movie:</span> RRR
+                </p>
+
+                <p>
+                    <span>Theatre:</span> PVR Cinemas
+                </p>
+
+                <p>
+                    <span>Showtime:</span> 08:30 PM
+                </p>
+
+                <p>
+                    <span>Ticket Price:</span> ₹180 per seat
+                </p>
+
+            </div>
+
+
+            <!-- Seat Section -->
+            <div class="seat-section">
+
+                <h2>Choose Your Seats</h2>
+
+                <div class="screen"></div>
+
+                <p class="screen-text">
+                    SCREEN THIS SIDE
+                </p>
+
+
+                <div class="seat-layout">
+
+                    <!-- Row A -->
+                    <div class="seat-row">
+                        <span class="row-name">A</span>
+
+                        <button class="seat" data-seat="A1">A1</button>
+                        <button class="seat" data-seat="A2">A2</button>
+                        <button class="seat" data-seat="A3">A3</button>
+                        <button class="seat" data-seat="A4">A4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="A5">A5</button>
+                        <button class="seat" data-seat="A6">A6</button>
+                        <button class="seat" data-seat="A7">A7</button>
+                        <button class="seat" data-seat="A8">A8</button>
+                    </div>
+
+
+                    <!-- Row B -->
+                    <div class="seat-row">
+                        <span class="row-name">B</span>
+
+                        <button class="seat" data-seat="B1">B1</button>
+                        <button class="seat" data-seat="B2">B2</button>
+                        <button class="seat booked" disabled data-seat="B3">B3</button>
+                        <button class="seat" data-seat="B4">B4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="B5">B5</button>
+                        <button class="seat" data-seat="B6">B6</button>
+                        <button class="seat" data-seat="B7">B7</button>
+                        <button class="seat booked" disabled data-seat="B8">B8</button>
+                    </div>
+
+
+                    <!-- Row C -->
+                    <div class="seat-row">
+                        <span class="row-name">C</span>
+
+                        <button class="seat" data-seat="C1">C1</button>
+                        <button class="seat" data-seat="C2">C2</button>
+                        <button class="seat" data-seat="C3">C3</button>
+                        <button class="seat" data-seat="C4">C4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="C5">C5</button>
+                        <button class="seat" data-seat="C6">C6</button>
+                        <button class="seat booked" disabled data-seat="C7">C7</button>
+                        <button class="seat" data-seat="C8">C8</button>
+                    </div>
+
+
+                    <!-- Row D -->
+                    <div class="seat-row">
+                        <span class="row-name">D</span>
+
+                        <button class="seat" data-seat="D1">D1</button>
+                        <button class="seat" data-seat="D2">D2</button>
+                        <button class="seat" data-seat="D3">D3</button>
+                        <button class="seat" data-seat="D4">D4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="D5">D5</button>
+                        <button class="seat" data-seat="D6">D6</button>
+                        <button class="seat" data-seat="D7">D7</button>
+                        <button class="seat" data-seat="D8">D8</button>
+                    </div>
+
+
+                    <!-- Row E -->
+                    <div class="seat-row">
+                        <span class="row-name">E</span>
+
+                        <button class="seat" data-seat="E1">E1</button>
+                        <button class="seat booked" disabled data-seat="E2">E2</button>
+                        <button class="seat" data-seat="E3">E3</button>
+                        <button class="seat" data-seat="E4">E4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="E5">E5</button>
+                        <button class="seat" data-seat="E6">E6</button>
+                        <button class="seat" data-seat="E7">E7</button>
+                        <button class="seat" data-seat="E8">E8</button>
+                    </div>
+
+
+                    <!-- Row F -->
+                    <div class="seat-row">
+                        <span class="row-name">F</span>
+
+                        <button class="seat" data-seat="F1">F1</button>
+                        <button class="seat" data-seat="F2">F2</button>
+                        <button class="seat" data-seat="F3">F3</button>
+                        <button class="seat" data-seat="F4">F4</button>
+
+                        <span class="seat-gap"></span>
+
+                        <button class="seat" data-seat="F5">F5</button>
+                        <button class="seat" data-seat="F6">F6</button>
+                        <button class="seat" data-seat="F7">F7</button>
+                        <button class="seat" data-seat="F8">F8</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Legend -->
+                <div class="legend">
+
+                    <div class="legend-item">
+                        <span class="legend-box"></span>
+                        Available
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-box selected"></span>
+                        Selected
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-box booked"></span>
+                        Booked
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Selection Summary -->
+            <div class="selection-summary">
+
+                <div class="summary-line">
+                    <span>Selected Seats</span>
+                    <strong id="selectedSeats">None</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Number of Seats</span>
+                    <strong id="seatCount">0</strong>
+                </div>
+
+                <div class="summary-line total-line">
+                    <span>Total Amount</span>
+                    <span id="totalAmount">₹0</span>
+                </div>
+
+               <a href="chekout.html"> <button
+                    class="continue-btn"
+                    id="continueBtn"
+                    disabled
+                    onclick="continueBooking()">
+
+                    Continue to Checkout →
+
+                </button> </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 <span>YTH Movie Booking</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+<script src="assets/js/seats.js"></script></body>
+</html>

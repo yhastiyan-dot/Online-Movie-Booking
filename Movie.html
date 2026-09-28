@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RRR | YTH Movie Booking</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/Movie.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+   <nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="YTH Movie Booking">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="movie.html" class="active">Movies</a>
+        <a href="showtimes.html">Showtimes</a>
+        <a href="seats.html">Seats</a>
+        <a href="chekout.html">Checkoutt</a>
+         <a href="confarmation.html">Comfarmationt</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+</nav>
+
+
+    <!-- Movie Hero Section -->
+    <section class="movie-hero">
+
+        <div class="movie-poster">
+            <img
+                src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4"
+                alt="RRR Movie Poster">
+        </div>
+
+        <div class="movie-content">
+
+            <span class="movie-tag">NOW SHOWING</span>
+
+            <h1>RRR</h1>
+
+            <div class="movie-meta">
+                <span class="rating">★ 8.0/10</span>
+                <span>2022</span>
+                <span>3h 7m</span>
+                <span>Hindi / Telugu</span>
+            </div>
+
+            <p class="movie-description">
+                Two legendary revolutionaries come together to fight
+                against British rule. RRR is an action-packed Indian
+                movie filled with friendship, courage, powerful emotions
+                and spectacular scenes.
+            </p>
+
+            <div class="movie-info">
+                <span class="info-badge">Action</span>
+                <span class="info-badge">Drama</span>
+                <span class="info-badge">Historical</span>
+                <span class="info-badge">U/A</span>
+            </div>
+
+            <div class="action-buttons">
+
+                <a href="showtimes.html" class="btn book-btn">
+                    Book Tickets
+                </a>
+
+                <button class="btn trailer-btn" onclick="openTrailer()">
+                    ▶ Watch Trailer
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Movie Information -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Movie Information
+        </h2>
+
+        <div class="movie-details-grid">
+
+            <div class="detail-box">
+                <h3>Director</h3>
+                <p>S. S. Rajamouli</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Language</h3>
+                <p>Hindi / Telugu</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Release Date</h3>
+                <p>March 25, 2022</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Production</h3>
+                <p>DVV Entertainment</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Genres</h3>
+                <p>Action, Drama, Historical Fiction</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Certificate</h3>
+                <p>U/A</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cast and Characters -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Cast & Characters
+        </h2>
+
+        <div class="cast-grid">
+
+            <div class="cast-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                    alt="Ram Charan">
+
+                <h3>Ram Charan</h3>
+
+                <p>Alluri Sitarama Raju</p>
+
+            </div>
+
+
+            <div class="cast-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"
+                    alt="N. T. Rama Rao Jr.">
+
+                <h3>N. T. Rama Rao Jr.</h3>
+
+                <p>Komaram Bheem</p>
+
+            </div>
+
+
+            <div class="cast-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                    alt="Alia Bhatt">
+
+                <h3>Alia Bhatt</h3>
+
+                <p>Sita</p>
+
+            </div>
+
+
+            <div class="cast-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+                    alt="Ajay Devgn">
+
+                <h3>Ajay Devgn</h3>
+
+                <p>Venkata Rama Raju</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Watch This Movie -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Why Watch This Movie?
+        </h2>
+
+        <div class="movie-details-grid">
+
+            <div class="detail-box">
+
+                <h3>Powerful Story</h3>
+
+                <p>
+                    A strong story based on friendship, sacrifice,
+                    courage and the fight for freedom.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>Indian Cinema</h3>
+
+                <p>
+                    Experience the energy, emotions and grand
+                    presentation of Indian cinema.
+                </p>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>Audience Experience</h3>
+
+                <p>
+                    Enjoy your favourite movie with comfortable seats,
+                    easy booking and multiple show timings.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- More Indian Movies -->
+    <section class="section">
+
+        <h2 class="section-title">
+            More Indian Movies
+        </h2>
+
+        <div class="similar-grid">
+
+            <div class="similar-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1485846234645-a62644f84728"
+                    alt="Pushpa The Rise">
+
+                <div class="similar-card-content">
+
+                    <h3>Pushpa: The Rise</h3>
+
+                    <p>★ 7.6/10 | Action</p>
+
+                    <a href="movie.html" class="small-btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="similar-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23"
+                    alt="KGF Chapter 2">
+
+                <div class="similar-card-content">
+
+                    <h3>KGF Chapter 2</h3>
+
+                    <p>★ 8.3/10 | Action</p>
+
+                    <a href="movie.html" class="small-btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="similar-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1"
+                    alt="Jawan">
+
+                <div class="similar-card-content">
+
+                    <h3>Jawan</h3>
+
+                    <p>★ 7.0/10 | Action</p>
+
+                    <a href="movie.html" class="small-btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="similar-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1534447677768-be436bb09401"
+                    alt="Chhaava">
+
+                <div class="similar-card-content">
+
+                    <h3>Chhaava</h3>
+
+                    <p>★ 8.0/10 | Historical</p>
+
+                    <a href="movie.html" class="small-btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trailer Modal -->
+    <div class="trailer-modal" id="trailerModal">
+
+        <div class="modal-content">
+
+            <h2>RRR Movie Trailer</h2>
+
+            <p>
+                This is a demo trailer popup for your YTH Movie Booking
+                college practical project. Later, you can add a YouTube
+                trailer video inside this section.
+            </p>
+
+            <button class="close-btn" onclick="closeTrailer()">
+                Close Trailer
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 <span>YTH Movie Booking</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+<script src="assets/js/movie.js"></script>
+</body>
+</html>

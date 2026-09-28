@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Showtimes | YTH Movie Booking</title>
+
+    <link rel="stylesheet" href="assets/css/showtimes.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="YTH Movie Booking Logo">
+        </a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Movie.html">Movies</a>
+            </li>
+
+            <li>
+                <a href="showtimes.html">Showtimes</a>
+            </li>
+
+            <li>
+                <a href="seats.html">Seats</a>
+            </li>
+            <li>
+                <a href="chekout.html">CheckOut</a>
+            </li>
+              <li>
+                <a href="confarmation.html">Comfarmationt</a>
+            </li>
+        </ul>
+
+        <a href="login.html" class="login-btn">Login</a>
+
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+
+        <h1 style="margin-top: 50px;">Select <span>Showtime</span></h1>
+
+        <p>
+            Choose your city, date, theatre and preferred show timing.
+        </p>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section">
+
+            <!-- Movie Summary -->
+            <div class="movie-summary">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4"
+                    alt="RRR Movie Poster">
+
+                <div>
+                    <h2>RRR</h2>
+
+                    <p>
+                        <span class="rating">★ 8.0/10</span>
+                        &nbsp; | &nbsp; Action, Drama, Historical
+                    </p>
+
+                    <p>
+                        Hindi / Telugu &nbsp; | &nbsp; 3h 7m
+                    </p>
+
+                    <p>
+                        Select a theatre and showtime to continue your booking.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Filters -->
+            <h2 class="section-title">
+                Choose Your Preferences
+            </h2>
+
+            <div class="filters">
+
+                <div class="filter-box">
+
+                    <label for="city">
+                        Select City
+                    </label>
+
+                    <select id="city">
+                        <option value="">Choose City</option>
+                        <option value="Meerut">Meerut</option>
+                        <option value="Muzaffarnagar">Muzaffarnagar</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+
+                </div>
+
+
+                <div class="filter-box">
+
+                    <label for="date">
+                        Select Date
+                    </label>
+
+                    <input type="date" id="date">
+
+                </div>
+
+            </div>
+
+
+            <!-- Theatre List -->
+            <h2 class="section-title">
+                Available Theatres
+            </h2>
+
+            <div class="theatre-list">
+
+                <!-- Theatre 1 -->
+                <div class="theatre-card">
+
+                    <div class="theatre-top">
+
+                        <div>
+                            <h3>PVR Cinemas</h3>
+                            <p>City Mall, Main Road</p>
+                        </div>
+
+                        <span class="theatre-type">
+                            PREMIUM
+                        </span>
+
+                    </div>
+
+                    <div class="showtimes">
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            10:00 AM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            01:30 PM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            05:00 PM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            08:30 PM
+                            <small>2D</small>
+                        </button>
+
+                    </div>
+
+                    <a href="seats.html" class="select-seat-btn">
+                        Select Seats →
+                    </a>
+
+                </div>
+
+
+                <!-- Theatre 2 -->
+                <div class="theatre-card">
+
+                    <div class="theatre-top">
+
+                        <div>
+                            <h3>INOX Movies</h3>
+                            <p>Central Shopping Complex</p>
+                        </div>
+
+                        <span class="theatre-type">
+                            STANDARD
+                        </span>
+
+                    </div>
+
+                    <div class="showtimes">
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            11:00 AM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            02:30 PM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            06:00 PM
+                            <small>2D</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            09:00 PM
+                            <small>2D</small>
+                        </button>
+
+                    </div>
+
+                    <a href="seats.html" class="select-seat-btn">
+                        Select Seats →
+                    </a>
+
+                </div>
+
+
+                <!-- Theatre 3 -->
+                <div class="theatre-card">
+
+                    <div class="theatre-top">
+
+                        <div>
+                            <h3>Wave Cinemas</h3>
+                            <p>Entertainment Plaza</p>
+                        </div>
+
+                        <span class="theatre-type">
+                            IMAX
+                        </span>
+
+                    </div>
+
+                    <div class="showtimes">
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            12:00 PM
+                            <small>IMAX</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            03:30 PM
+                            <small>IMAX</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            07:00 PM
+                            <small>IMAX</small>
+                        </button>
+
+                        <button class="time-btn" onclick="selectTime(this)">
+                            10:00 PM
+                            <small>IMAX</small>
+                        </button>
+
+                    </div>
+
+                    <a href="seats.html" class="select-seat-btn">
+                        Select Seats →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notice -->
+            <div class="notice">
+
+                <strong>Important:</strong>
+
+                Please select your preferred showtime before proceeding
+                to seat selection. This is a frontend demo for the YTH
+                Movie Booking college practical project.
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 <span>YTH Movie Booking</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+<link rel="stylesheet" href="assets/js/showtimes.js"></body>
+</html>

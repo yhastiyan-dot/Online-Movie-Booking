@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YTH Movie Booking | Home</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <img src="assets/images/logo.png"
+             alt="YTH Logo"
+             onerror="this.style.display='none'">
+
+        YTH <span>MOVIE</span>
+
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="Movie.html">Movies</a>
+        <a href="showtimes.html">Showtimes</a>
+        <a href="seats.html">Seats</a>
+        <a href="chekout.html">CheckOut</a>
+        <a href="confarmation.html">Comfarmation</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="search-btn"
+                onclick="document.getElementById('search').focus()">
+            🔍 Search
+        </button>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            YTH MOVIE BOOKING
+        </div>
+
+        <h1>
+            Experience Movies<br>
+            Like <span>Never Before.</span>
+        </h1>
+
+        <div class="hero-info">
+
+            <span>🎬 Premium Cinema</span>
+            <span>⭐ Best Experience</span>
+            <span>🎟 Easy Booking</span>
+
+        </div>
+
+        <p>
+            Book your favourite movies, choose your perfect seats,
+            and enjoy an unforgettable cinematic experience with
+            YTH Movie Booking.
+        </p>
+
+        <a href="#movies" class="hero-btn">
+            🎟 Book Tickets
+        </a>
+
+        <a href="#movies" class="outline-btn">
+            ▶ Explore Movies
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search for movies..."
+            onkeyup="searchMovies()"
+        >
+
+        <button onclick="searchMovies()">
+            🔍 Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- TRENDING MOVIES -->
+
+<section class="section" id="movies">
+
+    <div class="section-heading">
+
+        <h2>🔥 Trending Movies</h2>
+
+        <span>Popular Now</span>
+
+    </div>
+
+    <div class="movie-grid" id="movieGrid">
+
+        <!-- MOVIE 1 -->
+
+        <div class="movie-card" data-title="Inception">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=700&q=80"
+                     alt="Inception">
+
+                <div class="movie-badge">TRENDING</div>
+
+                <div class="movie-rating">⭐ 8.8</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Inception</h3>
+
+                <div class="movie-meta">
+                    <span>2010</span>
+                    <span>2h 28m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOVIE 2 -->
+
+        <div class="movie-card" data-title="Interstellar">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=700&q=80"
+                     alt="Interstellar">
+
+                <div class="movie-badge">POPULAR</div>
+
+                <div class="movie-rating">⭐ 8.7</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Interstellar</h3>
+
+                <div class="movie-meta">
+                    <span>2014</span>
+                    <span>2h 49m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOVIE 3 -->
+
+        <div class="movie-card" data-title="The Dark Knight">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=700&q=80"
+                     alt="The Dark Knight">
+
+                <div class="movie-badge">TOP RATED</div>
+
+                <div class="movie-rating">⭐ 9.0</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>The Dark Knight</h3>
+
+                <div class="movie-meta">
+                    <span>2008</span>
+                    <span>2h 32m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOVIE 4 -->
+
+        <div class="movie-card" data-title="Avatar">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=700&q=80"
+                     alt="Avatar">
+
+                <div class="movie-badge">NEW</div>
+
+                <div class="movie-rating">⭐ 8.5</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Avatar</h3>
+
+                <div class="movie-meta">
+                    <span>2009</span>
+                    <span>2h 42m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <p id="noResults"
+       style="display:none;color:#aaa;margin-top:20px;">
+        No movies found.
+    </p>
+
+</section>
+
+
+<!-- NOW SHOWING -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>🎥 Now Showing</h2>
+
+        <span>Explore More</span>
+
+    </div>
+
+    <div class="movie-grid">
+
+        <div class="movie-card" data-title="Dune">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=700&q=80"
+                     alt="Dune">
+
+                <div class="movie-badge">NOW SHOWING</div>
+
+                <div class="movie-rating">⭐ 8.6</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Dune</h3>
+
+                <div class="movie-meta">
+                    <span>2021</span>
+                    <span>2h 35m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-card" data-title="Avengers">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&w=700&q=80"
+                     alt="Avengers">
+
+                <div class="movie-badge">POPULAR</div>
+
+                <div class="movie-rating">⭐ 8.4</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Avengers</h3>
+
+                <div class="movie-meta">
+                    <span>2012</span>
+                    <span>2h 23m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-card" data-title="Joker">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=700&q=80"
+                     alt="Joker">
+
+                <div class="movie-badge">TOP PICK</div>
+
+                <div class="movie-rating">⭐ 8.9</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>Joker</h3>
+
+                <div class="movie-meta">
+                    <span>2019</span>
+                    <span>2h 2m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="movie-card" data-title="The Batman">
+
+            <div class="movie-poster">
+
+                <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=700&q=80"
+                     alt="The Batman">
+
+                <div class="movie-badge">FEATURED</div>
+
+                <div class="movie-rating">⭐ 8.3</div>
+
+            </div>
+
+            <div class="movie-info">
+
+                <h3>The Batman</h3>
+
+                <div class="movie-meta">
+                    <span>2022</span>
+                    <span>2h 56m</span>
+                </div>
+
+                <a href="movie.html" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+
+    <div class="section-heading">
+
+        <h2>🎭 Browse Categories</h2>
+
+        <span>Find Your Genre</span>
+
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+
+            <div class="category-icon">🎬</div>
+
+            <h3>Action</h3>
+
+            <p>High-energy movies full of adventure.</p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">😂</div>
+
+            <h3>Comedy</h3>
+
+            <p>Laugh out loud with entertaining movies.</p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">❤️</div>
+
+            <h3>Romance</h3>
+
+            <p>Beautiful stories of love and emotions.</p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">👻</div>
+
+            <h3>Horror</h3>
+
+            <p>Thrilling stories for horror lovers.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>✨ Why Choose YTH?</h2>
+
+        <span>Our Features</span>
+
+    </div>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🎟️</div>
+
+            <h3>Easy Ticket Booking</h3>
+
+            <p>
+                Select your movie, choose your seats,
+                and book your tickets in a few simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">💺</div>
+
+            <h3>Choose Your Seats</h3>
+
+            <p>
+                Select the perfect seats for your movie
+                experience with our interactive seat layout.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">⚡</div>
+
+            <h3>Fast & Simple</h3>
+
+            <p>
+                Enjoy a clean, simple and user-friendly
+                movie booking experience.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SPECIAL OFFER -->
+
+<section class="offer-section">
+
+    <div class="offer-banner">
+
+        <div>
+
+            <h2>🎉 Movie Night Special</h2>
+
+            <p>
+                Plan your next movie night with YTH Movie Booking.
+                Discover movies, select seats and enjoy the show.
+            </p>
+
+        </div>
+
+        <a href="#movies" class="offer-btn">
+            Explore Movies →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- COMING SOON -->
+
+<section class="section" id="coming">
+
+    <div class="section-heading">
+
+        <h2>🎬 Coming Soon</h2>
+
+        <span>Stay Tuned</span>
+
+    </div>
+
+    <div class="coming-card">
+
+        <div class="coming-image"></div>
+
+        <div class="coming-content">
+
+            <div class="tag">
+                COMING SOON TO YTH
+            </div>
+
+            <h2>New Adventures Await</h2>
+
+            <p>
+                Get ready for exciting new movies, amazing stories,
+                and unforgettable cinematic experiences.
+                Stay connected with YTH Movie Booking for upcoming releases.
+            </p>
+
+            <button class="notify-btn" onclick="showToast()">
+                🔔 Notify Me
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>YTH MOVIE</h3>
+
+            <p>Your ultimate movie booking experience.</p>
+            <p>Watch. Book. Enjoy.</p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#movies">Movies</a></p>
+            <p><a href="#categories">Categories</a></p>
+            <p><a href="#coming">Coming Soon</a></p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Email: ythmovie@example.com</p>
+            <p>© 2026 YTH Movie Booking</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 YTH Movie Booking. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST MESSAGE -->
+
+<div class="toast" id="toast">
+    🔔 Notification feature coming soon!
+</div>
+
+
+
+<script src="assets/js/script.js"></script></body>
+</html>
+  

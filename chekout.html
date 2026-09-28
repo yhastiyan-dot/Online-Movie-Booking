@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | YTH Movie Booking</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="YTH Movie Booking Logo">
+        </a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Movie.html">Movies</a>
+            </li>
+
+            <li>
+                <a href="showtimes.html">Showtimes</a>
+            </li>
+
+            <li>
+                <a href="seats.html">Seats</a>
+            </li>
+
+            <li>
+                <a href="chekout.html">Checkout</a>
+            </li>
+            <li>
+                <a href="confarmation.html">Comfarmation</a>
+            </li>
+        </ul>
+
+        <a href="login.html" class="login-btn">Login</a>
+
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+
+        <h1>Complete Your <span>Booking</span></h1>
+
+        <p>
+            Enter your details and confirm your movie tickets.
+        </p>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section">
+
+            <div class="checkout-grid">
+
+                <!-- Booking Summary -->
+                <div class="checkout-card">
+
+                    <h2>Booking Summary</h2>
+
+                    <div class="movie-summary">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4"
+                            alt="RRR Movie Poster">
+
+                        <div>
+                            <h3>RRR</h3>
+
+                            <p>Action | Drama | Historical</p>
+
+                            <p>Hindi / Telugu</p>
+
+                            <p>Duration: 3h 7m</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-row">
+                        <span>Theatre</span>
+                        <strong>PVR Cinemas</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Showtime</span>
+                        <strong>08:30 PM</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Selected Seats</span>
+                        <strong id="selectedSeats">None</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Ticket Price</span>
+                        <strong>₹180</strong>
+                    </div>
+
+                    <div class="summary-row total-row">
+                        <span>Total Amount</span>
+                        <strong id="totalAmount">₹0</strong>
+                    </div>
+
+                    <a href="seats.html" class="back-link">
+                        ← Change Seats
+                    </a>
+
+                </div>
+
+
+                <!-- Customer Details -->
+                <div class="checkout-card">
+
+                    <h2>Customer Details</h2>
+
+                    <form id="checkoutForm">
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Mobile Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter mobile number"
+                                pattern="[0-9]{10}"
+                                required>
+
+                        </div>
+
+
+                        <h3 class="payment-title">
+                            Select Payment Method
+                        </h3>
+
+                        <div class="payment-options">
+
+                            <label class="payment-option">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="UPI"
+                                    required>
+
+                                UPI Payment
+                            </label>
+
+
+                            <label class="payment-option">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="Debit/Credit Card">
+
+                                Debit / Credit Card
+                            </label>
+
+
+                            <label class="payment-option">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="Cash at Counter">
+
+                                Cash at Counter
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="confirm-btn">
+
+                            Confirm Booking →
+
+                        </button>
+
+                        <p class="secure-note">
+                            This is a frontend demo. No real payment
+                            will be processed.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 <span>YTH Movie Booking</span>.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+<script src="assets/js/checkout.js"></script></body>
+</html>
